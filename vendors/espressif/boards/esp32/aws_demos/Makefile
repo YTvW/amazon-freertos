@@ -12,7 +12,8 @@ endif
 ifndef IDF_PATH
 export IDF_PATH := $(AMAZON_FREERTOS_PATH)/vendors/espressif/esp-idf
 EXTRA_COMPONENT_DIRS :=  $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/aws_demos/application_code/espressif_code \
-                         $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/components
+                         $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/components \
+                         $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/ports/common_io
 
 ifdef AFR_ESP_FREERTOS_TCP
 EXTRA_COMPONENT_DIRS += $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/components/freertos_tcpip
