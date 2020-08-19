@@ -15,7 +15,9 @@ export IDF_PATH := $(AMAZON_FREERTOS_PATH)/vendors/espressif/esp-idf
 export AMAZON_FREERTOS_ENABLE_UNIT_TEST := 1
 
 EXTRA_COMPONENT_DIRS := $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/aws_tests/application_code/espressif_code \
-                        $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/components
+                        $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/ports/common_io \
+                        $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/components
+
 
 ifdef AFR_ESP_FREERTOS_TCP
 EXTRA_COMPONENT_DIRS += $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/components/freertos_tcpip
