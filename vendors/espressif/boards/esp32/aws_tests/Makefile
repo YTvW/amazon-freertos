@@ -12,7 +12,7 @@ endif
 ifndef IDF_PATH
 export IDF_PATH := $(AMAZON_FREERTOS_PATH)/vendors/espressif/esp-idf
 
-export AMAZON_FREERTOS_ENABLE_UNIT_TEST := 1
+export AMAZON_FREERTOS_ENABLE_UNIT_TEST := 0
 
 EXTRA_COMPONENT_DIRS := $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/aws_tests/application_code/espressif_code \
                         $(AMAZON_FREERTOS_PATH)/vendors/espressif/boards/esp32/ports/common_io \
